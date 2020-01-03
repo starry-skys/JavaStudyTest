@@ -4,7 +4,7 @@ package com.test.designMode.adapter.interfaceadp;
  * @Author zwb
  * @DATE 2020/1/3 11:51
  */
-public class DefaultAdapter implements IDCOutput {
+public abstract class DefaultAdapter implements IDCOutput {
     @Override
     public int output5V() {
         return 0;
