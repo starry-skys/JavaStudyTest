@@ -1,0 +1,14 @@
+.projects
+.projects/*
+.project
+.project/*
+.settings/*
+.settings
+*.class
+.classpath
+target
+target/*
+out
+Out/*
+.idea
+*.iml
