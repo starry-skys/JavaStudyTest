@@ -31,8 +31,9 @@ public class ForkJoinWork extends RecursiveTask<Long> {
             Long mid = (start + end) /2;
             ForkJoinWork task1 = new ForkJoinWork(start,mid);
             ForkJoinWork task2 = new ForkJoinWork(mid+1,end);
-
-            invokeAll(task1,task2);
+            task1.fork();
+            task2.fork();
+//            invokeAll(task1,task2);
             //合并计算
             return task1.join() + task2.join();
         }

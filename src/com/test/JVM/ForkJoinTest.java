@@ -8,9 +8,17 @@ public class ForkJoinTest {
         Long start = 0L;
         Long end = 10_0000_0000L;
 
-        testForkJoin(start,end);
+//        testSum(start,end);
+//        testForkJoin(start,end);
+        testStream(start,end);
+
     }
 
+    /**
+     * 普通for循环 - 7155ms
+     * @param start
+     * @param end
+     */
     public static void testSum(Long start,Long end){
         long l = System.currentTimeMillis();
 
@@ -23,6 +31,12 @@ public class ForkJoinTest {
         System.out.println("结果:"+sum+",耗时:"+(l1-l));
     }
 
+    /**
+     * forkjoin方式 - 6700ms
+     * @param start
+     * @param end
+     * @throws Exception
+     */
     public static void testForkJoin(Long start,Long end) throws Exception{
         long l = System.currentTimeMillis();
 
@@ -34,6 +48,11 @@ public class ForkJoinTest {
         System.out.println("结果:"+invoke+",耗时:"+(l1-l));
     }
 
+    /**
+     * stream流 - 544
+     * @param start
+     * @param end
+     */
     public static void testStream(Long start,Long end){
         long l = System.currentTimeMillis();
 
