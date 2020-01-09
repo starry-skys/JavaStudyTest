@@ -4,30 +4,29 @@ import java.util.concurrent.RecursiveTask;
 
 public class ForkJoinWork extends RecursiveTask<Long> {
 
-    private Long start;
-    private Long end;
+    private long start;
+    private long end;
 
     //临界点
-    private static final Long THRESHOLD = 10000L;
+    private static final long THRESHOLD = 100_0000L;
 
-    public ForkJoinWork(Long start, Long end) {
+    public ForkJoinWork(long start, long end) {
         this.start = start;
         this.end = end;
     }
 
     @Override
     protected Long compute() {
-        Long len = end - start;
+        long len = end - start;
+        //不大于临界值直接计算结果
         if(len < THRESHOLD){
-            Long sum = 0L;
-            for (Long i = start; i <= end; i++) {
+            long sum = 0L;
+            for (long i = start; i <= end; i++) {
                 sum += i;
             }
-            System.out.println("普通累加");
             return sum;
         }else{
-            System.out.println("forkjoin累加");
-            //拆分为两个任务
+            //大于临界值时,拆分为两个子任务
             Long mid = (start + end) /2;
             ForkJoinWork task1 = new ForkJoinWork(start,mid);
             ForkJoinWork task2 = new ForkJoinWork(mid+1,end);
