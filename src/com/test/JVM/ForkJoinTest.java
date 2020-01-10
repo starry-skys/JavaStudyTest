@@ -15,7 +15,7 @@ public class ForkJoinTest {
     }
 
     /**
-     * 普通for循环 - 7155ms
+     * 普通for循环 - 1273ms
      * @param start
      * @param end
      */
@@ -32,7 +32,7 @@ public class ForkJoinTest {
     }
 
     /**
-     * forkjoin方式 - 6700ms
+     * forkjoin方式 - 917ms
      * @param start
      * @param end
      * @throws Exception
@@ -49,7 +49,7 @@ public class ForkJoinTest {
     }
 
     /**
-     * stream流 - 544
+     * stream流 - 676ms
      * @param start
      * @param end
      */
