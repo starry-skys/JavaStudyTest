@@ -1,10 +1,12 @@
 package com.test.designMode.protype;
 
+import java.io.Serializable;
+
 /**
  * @Author zwb
  * @DATE 2020/1/15 11:28
  */
-public class Subject {
+public class Subject implements Serializable {
     private String name;
     private String content;
 
@@ -41,4 +43,5 @@ public class Subject {
                 ", content='" + content + '\'' +
                 '}';
     }
+
 }

@@ -1,13 +1,15 @@
 package com.test.designMode.protype;
 
+import java.io.*;
+
 /**
  * @Author zwb
  * @DATE 2020/1/15 11:00
  */
-public class Student implements Cloneable {
+public class Student implements Serializable {
     private int age;
     private String name;
-    private Subject subject;
+    private transient Subject subject;
 
     public int getAge() {
         return age;
@@ -51,8 +53,16 @@ public class Student implements Cloneable {
                 '}';
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+
+    //深克隆
+    public Object deepClone() throws IOException, ClassNotFoundException{
+        //把对象写入到流中
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(bos);
+        oos.writeObject(this);
+        //从流中读取
+        ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
+        ObjectInputStream ois = new ObjectInputStream(bis);
+        return ois.readObject();
     }
 }

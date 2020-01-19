@@ -7,7 +7,7 @@ package com.test.designMode.protype;
 public class ProTest {
     public static void main(String[] args) throws Exception {
         Student s1 = new Student(18,"张三",new Subject("语文","这是语文书"));
-        Student s2 = (Student)s1.clone();
+        Student s2 = (Student)s1.deepClone();
 
         System.out.println(s1);
         System.out.println(s2);
