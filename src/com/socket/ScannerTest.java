@@ -3,7 +3,7 @@ package com.socket;
 import java.util.Scanner;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/11/12 10:18
  */
 public class ScannerTest {

@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/22 16:48
  * 模拟网购厨具的同时,购买食材,从而完成烹饪
  */

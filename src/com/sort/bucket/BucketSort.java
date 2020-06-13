@@ -3,7 +3,7 @@ package com.sort.bucket;
 import java.util.Scanner;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/26 16:42
  * 桶排序
  */

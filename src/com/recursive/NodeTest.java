@@ -1,7 +1,7 @@
 package com.recursive;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/8/13 14:35
  */
 public class NodeTest {

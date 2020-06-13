@@ -1,7 +1,7 @@
 package com.designPrinciple;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/18 16:58
  */
 public class Calculate {

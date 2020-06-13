@@ -1,7 +1,7 @@
 package com.designMode.adapter.interfaceadp;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 11:45
  */
 public interface IDCOutput {

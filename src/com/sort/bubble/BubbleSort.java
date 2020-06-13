@@ -3,7 +3,7 @@ package com.sort.bubble;
 import java.util.Arrays;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/27 09:33
  * 冒泡排序
  */

@@ -9,7 +9,7 @@ import java.util.concurrent.TimeoutException;
 import static java.lang.System.currentTimeMillis;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/7 10:31
  */
 public class BooleanLock extends Thread implements MyLock {

@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/11/12 10:38
  */
 public class SocketServer {

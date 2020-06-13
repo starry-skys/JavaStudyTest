@@ -3,7 +3,7 @@ package com.thread.sync;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/5 15:40
  */
 public class ThisMonitor extends Thread{

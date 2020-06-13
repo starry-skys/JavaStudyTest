@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/11/11 16:58
  */
 public class SClient {

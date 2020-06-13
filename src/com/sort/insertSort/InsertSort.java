@@ -1,7 +1,7 @@
 package com.sort.insertSort;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/27 16:39
  * 插入排序
  */

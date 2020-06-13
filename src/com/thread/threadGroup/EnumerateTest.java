@@ -1,7 +1,7 @@
 package com.thread.threadGroup;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/7 16:46
  */
 public class EnumerateTest {

@@ -1,7 +1,7 @@
 package com.designPrinciple.isolation;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/19 15:26
  */
 public class Lion implements Animal,IRun {

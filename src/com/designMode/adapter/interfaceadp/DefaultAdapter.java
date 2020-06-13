@@ -1,7 +1,7 @@
 package com.designMode.adapter.interfaceadp;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 11:51
  */
 public abstract class DefaultAdapter implements IDCOutput {

@@ -3,7 +3,7 @@ package com.seed;
 import java.util.Random;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/10/20 10:15
  */
 public class TestSeed {

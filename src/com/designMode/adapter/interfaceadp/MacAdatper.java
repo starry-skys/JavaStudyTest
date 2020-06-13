@@ -3,7 +3,7 @@ package com.designMode.adapter.interfaceadp;
 import com.designMode.adapter.clsadp.AC;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 11:54
  */
 public class MacAdatper extends DefaultAdapter {

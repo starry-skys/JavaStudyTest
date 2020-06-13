@@ -1,7 +1,7 @@
 package com.thread.volatiles.enumholder;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/15 17:26
  */
 public class Singleton {

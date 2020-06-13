@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/7 10:50
  */
 public class BooleanLockTest {

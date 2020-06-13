@@ -4,7 +4,7 @@ import com.designMode.factory.simple.BenzCar;
 import com.designMode.factory.simple.Car;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/23 15:41
  */
 public class BenzFactory implements IFactory {

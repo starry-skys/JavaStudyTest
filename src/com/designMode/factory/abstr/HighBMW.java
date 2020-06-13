@@ -4,7 +4,7 @@ import com.designMode.factory.simple.Car;
 
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/23 16:07
  */
 public class HighBMW implements Car {

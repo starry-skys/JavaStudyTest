@@ -1,7 +1,7 @@
 package com.thread.volatiles;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/5/17 09:28
  */
 public class TestSafe {

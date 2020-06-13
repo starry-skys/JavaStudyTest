@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 10:27
  */
 public class TicketHandler implements InvocationHandler{

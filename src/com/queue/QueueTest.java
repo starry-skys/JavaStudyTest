@@ -1,7 +1,7 @@
 package com.queue;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/28 09:22
  * 队列
  */

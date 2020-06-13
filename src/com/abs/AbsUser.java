@@ -1,7 +1,7 @@
 package com.abs;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/12 17:34
  */
 public abstract class AbsUser {

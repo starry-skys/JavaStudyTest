@@ -1,7 +1,7 @@
 package com.classLoad;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/13 11:20
  */
 public class Singleton {

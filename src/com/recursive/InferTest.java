@@ -1,7 +1,7 @@
 package com.recursive;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/8/14 15:45
  */
 public class InferTest {

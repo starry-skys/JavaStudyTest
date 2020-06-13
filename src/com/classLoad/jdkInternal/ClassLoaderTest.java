@@ -1,7 +1,7 @@
 package com.classLoad.jdkInternal;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/13 15:36
  */
 public class ClassLoaderTest {

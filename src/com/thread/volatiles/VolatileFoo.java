@@ -3,7 +3,7 @@ package com.thread.volatiles;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/14 17:32
  */
 public class VolatileFoo {

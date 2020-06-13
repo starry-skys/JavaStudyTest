@@ -1,7 +1,7 @@
 package com.designMode.adapter.clsadp;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 11:03
  */
 public class ClsAdapter extends AC implements IDC{

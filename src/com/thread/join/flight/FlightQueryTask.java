@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/1 16:31
  */
 public class FlightQueryTask extends Thread implements FlightQuery {

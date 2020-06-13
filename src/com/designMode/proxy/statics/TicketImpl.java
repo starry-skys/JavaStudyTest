@@ -1,7 +1,7 @@
 package com.designMode.proxy.statics;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 10:21
  */
 public class TicketImpl implements ITicket {

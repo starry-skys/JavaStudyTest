@@ -1,7 +1,7 @@
 package com.list;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/8 14:50
  */
 public class TestPower {

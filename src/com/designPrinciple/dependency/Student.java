@@ -1,7 +1,7 @@
 package com.designPrinciple.dependency;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/19 11:09
  */
 public class Student {

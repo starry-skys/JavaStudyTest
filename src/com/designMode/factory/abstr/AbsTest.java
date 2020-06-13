@@ -1,7 +1,7 @@
 package com.designMode.factory.abstr;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/23 16:10
  */
 public class AbsTest {

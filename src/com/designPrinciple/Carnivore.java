@@ -1,7 +1,7 @@
 package com.designPrinciple;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/18 15:50
  */
 public class Carnivore extends Animal {

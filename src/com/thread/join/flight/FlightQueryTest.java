@@ -7,7 +7,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/1 16:46
  */
 public class FlightQueryTest {

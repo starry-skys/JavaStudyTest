@@ -3,7 +3,7 @@ package com.sort;
 import java.util.Arrays;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/7/15 09:04
  */
 public class SelectSort {

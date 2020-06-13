@@ -1,7 +1,5 @@
 package com.thread.volatiles;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class TestVola {
 
     public static void main(String[] args) {
@@ -18,8 +16,8 @@ public class TestVola {
 
 
 class VolThread extends Thread {
-//    private static volatile int count = 0;
-    private static AtomicInteger count = new AtomicInteger(0);
+    private static volatile int count = 0;
+//    private static AtomicInteger count = new AtomicInteger(0);
     @Override
     public void run() {
 
@@ -29,8 +27,8 @@ class VolThread extends Thread {
             e.printStackTrace();
         }
         for (int i = 0; i < 1000 ; i++) {
-//            count ++ ;
-            count.incrementAndGet();
+            count ++ ;
+//            count.incrementAndGet();
         }
         System.out.println("线程:"+Thread.currentThread().getName()+",count:" + count);
     }

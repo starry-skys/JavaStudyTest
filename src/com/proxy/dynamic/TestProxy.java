@@ -4,7 +4,7 @@ import com.proxy.UserManager;
 import com.proxy.UserManagerImpl;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/10 16:07
  */
 public class TestProxy {

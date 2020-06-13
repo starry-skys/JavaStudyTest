@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/7 10:22
  */
 public interface MyLock {

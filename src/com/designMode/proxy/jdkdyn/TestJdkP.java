@@ -4,7 +4,7 @@ import com.designMode.proxy.statics.ITicket;
 import com.designMode.proxy.statics.TicketImpl;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 10:40
  */
 public class TestJdkP {

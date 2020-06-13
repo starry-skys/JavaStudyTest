@@ -1,7 +1,7 @@
 package com.num;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/30 16:02
  */
 public class Testprec {

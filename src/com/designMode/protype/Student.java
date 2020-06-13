@@ -3,13 +3,13 @@ package com.designMode.protype;
 import java.io.*;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/15 11:00
  */
 public class Student implements Serializable {
     private int age;
     private String name;
-    private transient Subject subject;
+    private Subject subject;
 
     public int getAge() {
         return age;

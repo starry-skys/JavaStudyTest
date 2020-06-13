@@ -3,7 +3,7 @@ package com.thread.countABCDE;
 import java.util.concurrent.Callable;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/25 16:12
  */
 public class ThreadCount implements Callable<Integer> {

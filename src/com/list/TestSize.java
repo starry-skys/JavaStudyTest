@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/3/27 17:20
  */
 public class TestSize {

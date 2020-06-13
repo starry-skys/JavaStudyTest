@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/1 15:22
  */
 public class ThreadJoin {

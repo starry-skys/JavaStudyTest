@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/3/29 14:45
  */
 public class TestLinked {

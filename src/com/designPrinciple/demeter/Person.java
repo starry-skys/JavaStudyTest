@@ -1,7 +1,7 @@
 package com.designPrinciple.demeter;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/19 16:40
  */
 public class Person {

@@ -1,7 +1,7 @@
 package com.string;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/12/6 13:42
  */
 public class Test3 {

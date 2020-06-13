@@ -10,35 +10,21 @@ public class TestInterrupt {
             @Override
             public void run() {
                 try {
-//                    for (int i = 0; i < 5000; i++) {
-//                        if(Thread.currentThread().isInterrupted()){
-//                            System.out.println("中断循环");
-//                            break;
-//                        }
-//                        count ++;
-//                        System.out.println("count值："+count);
-//                    }
-                    if(Thread.currentThread().isInterrupted()){
-                        throw new InterruptedException("被中断异常");
-                    }
-                    count = count + 1000;
+                    count = new Random().nextInt(1000);
                     count = count * count;
-                    System.out.println(count);
-//                    Thread.sleep(5000);
-//                    System.out.println("睡眠结束");
+                    System.out.println("count:"+count);
+                    Thread.sleep(5000);
                 } catch (Exception e) {
-                    System.out.println("异常:" + e);
-                    System.out.println("打断标志："+Thread.currentThread().isInterrupted());
-                } finally {
-                    System.out.println("finally块被执行");
+                    System.out.println(Thread.currentThread().getName()+"线程第一次中断标志："+Thread.currentThread().isInterrupted());
+                    Thread.currentThread().interrupt();
+                    System.out.println(Thread.currentThread().getName()+"线程第二次中断标志："+Thread.currentThread().isInterrupted());
                 }
             }
         });
 
         t.start();
 
-//        Thread.sleep(1);
+        Thread.sleep(100);
         t.interrupt();
-        System.out.println("线程中断状态:"+t.isInterrupted());
     }
 }

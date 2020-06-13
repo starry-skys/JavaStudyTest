@@ -3,7 +3,7 @@ package com.sort.bucket;
 import java.util.Random;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/26 17:01
  */
 public class Test1 {

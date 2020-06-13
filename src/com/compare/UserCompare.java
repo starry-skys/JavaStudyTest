@@ -3,7 +3,7 @@ package com.compare;
 import java.util.Comparator;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/6 15:47
  */
 public class UserCompare implements Comparator<User> {

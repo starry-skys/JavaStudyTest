@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 import static java.util.Arrays.asList;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/12/11 11:08
  */
 public class Sums implements Callable<Long> {

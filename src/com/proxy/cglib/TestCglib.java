@@ -1,7 +1,7 @@
 package com.proxy.cglib;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/11 10:48
  */
 public class TestCglib {

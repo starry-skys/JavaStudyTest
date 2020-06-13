@@ -3,7 +3,7 @@ package com.thread.threadException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/8 15:00
  */
 public class CaptureException {

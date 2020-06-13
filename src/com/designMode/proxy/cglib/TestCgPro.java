@@ -1,7 +1,7 @@
 package com.designMode.proxy.cglib;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 10:50
  */
 public class TestCgPro {

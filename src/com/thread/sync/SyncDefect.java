@@ -3,7 +3,7 @@ package com.thread.sync;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/7 09:20
  */
 public class SyncDefect{

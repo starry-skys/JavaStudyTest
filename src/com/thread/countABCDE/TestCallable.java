@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/25 16:14
  */
 public class TestCallable {

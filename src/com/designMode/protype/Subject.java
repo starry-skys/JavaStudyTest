@@ -3,7 +3,7 @@ package com.designMode.protype;
 import java.io.Serializable;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/15 11:28
  */
 public class Subject implements Serializable {

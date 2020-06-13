@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 10:45
  */
 public class TicketPurProx implements MethodInterceptor{

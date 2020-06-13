@@ -1,7 +1,7 @@
 package com.binary;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/12/3 15:49
  */
 public class TestBinary {

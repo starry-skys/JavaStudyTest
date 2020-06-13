@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/10 15:53
  */
 public class LogHandler implements InvocationHandler {

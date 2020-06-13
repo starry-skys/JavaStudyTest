@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/5/7 16:25
  */
 public class CachedPoolTest {

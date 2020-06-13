@@ -3,7 +3,7 @@ package com.sort;
 import java.util.Arrays;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/9/9 16:07
  */
 public class ShellSort {

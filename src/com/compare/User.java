@@ -1,7 +1,7 @@
 package com.compare;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/6 15:10
  */
 public class User implements Comparable<User>{

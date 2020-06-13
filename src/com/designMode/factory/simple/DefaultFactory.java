@@ -1,7 +1,7 @@
 package com.designMode.factory.simple;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/23 15:01
  */
 public class DefaultFactory {

@@ -3,7 +3,7 @@ package com.string;
 import java.math.BigDecimal;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/12/26 14:07
  */
 public class TestBigDecimal {

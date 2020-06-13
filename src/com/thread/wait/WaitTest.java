@@ -6,7 +6,7 @@ import java.util.List;
 public class WaitTest {
     private static Object obj = new Object();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ListAdd listAdd = new ListAdd();
 
         Thread t1 = new Thread(() -> {
@@ -30,6 +30,7 @@ public class WaitTest {
         Thread t2 = new Thread(() -> {
             synchronized (obj){
                 try {
+                    System.out.println("线程:"+Thread.currentThread().getName()+"进入等待.");
                     if(listAdd.getSize() != 5){
                         obj.wait();
                     }
@@ -42,6 +43,7 @@ public class WaitTest {
         });
 
         t2.start();
+        Thread.sleep(1000);
         t1.start();
     }
 }

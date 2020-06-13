@@ -4,7 +4,7 @@ import com.designMode.adapter.clsadp.AC;
 import com.designMode.adapter.clsadp.IDC;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2020/1/3 11:23
  */
 public class ObjAdapter implements IDC {

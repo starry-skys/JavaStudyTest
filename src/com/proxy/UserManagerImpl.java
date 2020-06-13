@@ -1,7 +1,7 @@
 package com.proxy;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/10 15:45
  */
 public class UserManagerImpl implements UserManager {

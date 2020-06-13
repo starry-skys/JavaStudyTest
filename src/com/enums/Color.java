@@ -1,7 +1,7 @@
 package com.enums;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/16 14:44
  */
 public enum  Color {
@@ -22,10 +22,10 @@ public enum  Color {
         return null;
     }
 
-    @Override
-    public String toString() {
-        return this.index+"_"+this.name;
-    }
+//    @Override
+//    public String toString() {
+//        return this.index+"_"+this.name;
+//    }
 
     public int getIndex() {
         return index;
@@ -46,7 +46,9 @@ public enum  Color {
     public static void main(String[] args) {
         System.out.println(Color.BLUE.toString());
         Color red = Color.valueOf("RED");
+        System.out.println(red);
         System.out.println(red.getName()+red.getIndex());
+        System.out.println(Color.getName(1));
     }
 }
 

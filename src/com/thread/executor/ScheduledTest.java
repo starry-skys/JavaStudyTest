@@ -4,7 +4,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/5/7 17:20
  */
 public class ScheduledTest {

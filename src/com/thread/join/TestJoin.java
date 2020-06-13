@@ -1,7 +1,7 @@
 package com.thread.join;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/4/26 14:32
  */
 public class TestJoin {
@@ -9,10 +9,11 @@ public class TestJoin {
         Thread t1 = new Thread(new MultiT("a"));
         Thread t2 = new Thread(new MultiT("b"));
         Thread t3 = new Thread(new MultiT("c"));
-        t1.start();
-        t2.start();
 
+        t1.start();
         t1.join();
+
+        t2.start();
         t2.join();
 
         t3.start();

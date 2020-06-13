@@ -1,7 +1,7 @@
 package com.designMode.protype;
 
 /**
- * @Author zwb
+ * @Author Stephen
  * @DATE 2019/12/20 17:20
  */
 public class RealProto implements Cloneable {

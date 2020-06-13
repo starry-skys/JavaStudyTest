@@ -3,7 +3,7 @@ package com.thread.exit;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/11/2 15:26
  */
 public class FlagThreadExit {

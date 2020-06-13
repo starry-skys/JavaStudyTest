@@ -3,7 +3,7 @@ package com.sort.quicksort;
 import java.util.Random;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2018/9/27 14:30
  * 快速排序
  */

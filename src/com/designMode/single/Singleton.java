@@ -1,12 +1,12 @@
 package com.designMode.single;
 
 /**
- * @Author wanbei
+ *
  * @DATE 2019/7/31 11:02
  */
 public class Singleton {
 
-    private static volatile Singleton singleton = null;
+    private static  Singleton singleton = null;
 
     private Singleton(){
 
@@ -19,6 +19,7 @@ public class Singleton {
                 //进入同步代码块时也需要判断实例是否为空
                 if(singleton == null){
                     singleton = new Singleton();
+                    System.out.println("finish");
                 }
             }
         }
