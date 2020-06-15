@@ -8,12 +8,12 @@ import java.util.ServiceLoader;
  */
 public class JavaSpiTest {
     public static void main(String[] args) {
-        ServiceLoader<Animal> loader = ServiceLoader.load(Animal.class);
+        ServiceLoader<com.spi.Animal> loader = ServiceLoader.load(com.spi.Animal.class);
 
         loader.forEach(Animal::eat);
 //        Iterator<Animal> it = loader.iterator();
 //        while (it.hasNext()){
-//            Animal ani = it.next();
+//            com.spi.Animal ani = it.next();
 //            ani.eat();
 //        }
     }
