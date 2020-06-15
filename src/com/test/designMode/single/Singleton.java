@@ -6,22 +6,29 @@ package com.test.designMode.single;
  */
 public class Singleton {
 
-    private static volatile Singleton singleton = null;
-
     private Singleton(){
 
     }
 
-    public static Singleton getInstance(){
-        //进入方法内，先判断实例是否为空，以确定是否需要进入同步代码块
-        if(singleton == null){
-            synchronized (Singleton.class){
-                //进入同步代码块时也需要判断实例是否为空
-                if(singleton == null){
-                    singleton = new Singleton();
-                }
-            }
+    //定义一个枚举类
+    private enum SingletonEnum {
+        //创建一个枚举实例
+        INSTANCE;
+
+        private Singleton singleton;
+
+        //在枚举类的构造方法内实例化单例类
+        SingletonEnum(){
+            singleton = new Singleton();
         }
-        return singleton;
+
+        private Singleton getInstance(){
+            return singleton;
+        }
+    }
+
+    public static Singleton getInstance(){
+        //获取singleton实例
+        return SingletonEnum.INSTANCE.getInstance();
     }
 }
