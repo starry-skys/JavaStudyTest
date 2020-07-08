@@ -1,6 +1,6 @@
 package com.test.map;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 
 /**
  * @Author zwb
@@ -8,8 +8,9 @@ import java.util.LinkedHashMap;
  */
 public class TestHashMT {
     public static void main(String[] args) {
-        LinkedHashMap<String, Integer> map = new LinkedHashMap<>();
+        HashMap<String, Integer> map = new HashMap<>(12);
         map.put("1",1);
+
     }
 
 }

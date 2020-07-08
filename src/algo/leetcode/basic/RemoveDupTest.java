@@ -8,7 +8,6 @@ import org.junit.Test;
  */
 public class RemoveDupTest {
     //0,0,1,1,1,2,2,3,3,4
-
     @Test
     public void test(){
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
