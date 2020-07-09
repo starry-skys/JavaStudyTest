@@ -3,7 +3,7 @@ package com.test.map;
 import java.util.HashMap;
 
 /**
- * @Author zwb
+ * @Author
  * @DATE 2020/6/9 15:01
  */
 public class TestHashMT {
@@ -34,6 +34,8 @@ public class TestHashMT {
         map.put(null,"1");
         map.put(null,"2");
         System.out.println(map.get(null));
+
+
     }
 
 }

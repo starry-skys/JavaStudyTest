@@ -6,6 +6,5 @@ public class HeapTest {
         while(true){
             str += str;
         }
-
     }
 }
