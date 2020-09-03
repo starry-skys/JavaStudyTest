@@ -2,11 +2,12 @@ package com.stream;
 
 import org.junit.Test;
 
-import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+import java.util.function.*;
+
 
 /**
  * @Author zwb
@@ -21,18 +22,14 @@ public class LambdaTest {
     @Test
     public void test1(){
 
-        TreeMap<String, String> treeMap = new TreeMap<>(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o1.length() - o2.length();
-            }
-        });
-        treeMap.put("aaa","aaa");
-        treeMap.put("abcd","abcd");
-        treeMap.put("bb","bb");
-        System.out.println(treeMap);
+        List<String> list = new ArrayList<>();
+        list.add("aaa");
+        list.add("abcd");
+        list.add("bb");
 
-        TreeMap<String, String> treeMap1 = new TreeMap<>((o1, o2) -> o1.length() - o2.length());
+        Collections.sort(list,(o1,o2)-> o2.compareTo(o1));
+        Collections.sort(list,String::compareTo);
+        System.out.println(list);
     }
 
     @Test
@@ -96,6 +93,11 @@ public class LambdaTest {
 
     @Test
     public void test6(){
-        MyFunc.method3();
+        int res = compareTo(String::compareTo, "abc", "aa");
+        System.out.println(res);
+    }
+
+    public int compareTo(ToIntBiFunction<String,String> func, String s1, String s2){
+        return func.applyAsInt(s1,s2);
     }
 }
