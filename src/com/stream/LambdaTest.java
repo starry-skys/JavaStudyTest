@@ -2,10 +2,7 @@ package com.stream;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.function.*;
 
 
@@ -27,6 +24,12 @@ public class LambdaTest {
         list.add("abcd");
         list.add("bb");
 
+        Collections.sort(list, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o2.compareTo(o1);
+            }
+        });
         Collections.sort(list,(o1,o2)-> o2.compareTo(o1));
         Collections.sort(list,String::compareTo);
         System.out.println(list);
