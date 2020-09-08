@@ -9,5 +9,6 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyRepeatableAnnos {
+    //需要是数组，且类型对应重复注解的类型
     MyRepeatableAnno[] value();
 }

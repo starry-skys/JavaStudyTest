@@ -1,11 +1,12 @@
 package com.stream;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -93,4 +94,107 @@ public class StreamTest {
                 .flatMap(e -> IntStream.of(e * 2))
                 .forEach(System.out::println);
     }
+
+    @Test
+    public void test3(){
+        String[] fruits = {"apple","orange","banana"};
+        Stream.of(fruits).map((s) -> Stream.of(s.split("")))
+                         .forEach(e -> e.forEach(System.out::print));
+
+        System.out.println();
+        Stream.of(fruits).map(s -> s.split(""))
+                         .flatMap(e -> Stream.of(e))
+                         .forEach(System.out::print);
+
+        System.out.println();Stream.of(fruits).flatMap(s -> Stream.of(s.split("")))
+                         .collect(Collectors.toList())
+                         .forEach(System.out::print);
+
+    }
+
+    @Test
+    public void test4(){
+        String[] arr = {"abc","aa","ef"};
+        //默认升序（字典升序）
+        Stream.of(arr).sorted().forEach(System.out::println);
+        System.out.println("=====");
+        //自定义排序，字典降序
+        Stream.of(arr).sorted((s1,s2) -> s2.compareTo(s1))
+                      .forEach(System.out::println);
+    }
+
+    @Test
+    public void test5(){
+        Integer[] arr = {1,2,3,4,5,6};
+        Integer res1 = Stream.of(arr).reduce((x, y) -> x + y).get();
+        System.out.println(res1);
+
+        Integer res2 = Stream.of(arr).reduce(10,(x, y) -> x + y);
+        System.out.println(res2);
+
+        ArrayList<Integer> res = Stream.of(arr).reduce(Lists.newArrayList(0),
+                (l, e) -> {
+                    l.add(e);
+                    return l;
+                },
+                (l, c) -> {
+                    System.out.println("combiner");
+                    l.addAll(c);
+                    return l;
+                });
+        System.out.println(res);
+
+        Set<Integer> res3 = Stream.of(1, 2, 3, 4).parallel().reduce(Collections.synchronizedSet(Sets.newHashSet(10)),
+                (l, e) -> {
+                    l.add(e);
+                    return l;
+                },
+                (l, c) -> {
+                    l.addAll(c);
+                    return l;
+                });
+        System.out.println(res3);
+
+        AtomicInteger c = new AtomicInteger(0);
+        Integer res4 = Stream.of(1,2,3,4).parallel().reduce(1,
+                (s,e) -> s + e,
+                (sum, s) -> {
+                    System.out.println(s);c.getAndIncrement(); return sum + s;});
+        System.out.println(c);
+        System.out.println(res4);
+
+        AtomicInteger count = new AtomicInteger(0);
+        int length = 100;
+        Integer[] arr1 = new Integer[length];
+        for (int i = 0; i < length; i++) {
+            arr1[i] = i + 1;
+        }
+        Integer res5 = Stream.of(arr1).parallel().reduce(0,
+                (s,e) -> s + e,
+                (sum, s) -> {count.getAndIncrement(); return sum + s;});
+        System.out.println(count.get());
+        System.out.println(res5);
+    }
+
+    @Test
+    public void test6() {
+        ArrayList<Employee> list = new ArrayList<>();
+        list.add(new Employee("张三", 3000));
+        list.add(new Employee("李四", 5000));
+        list.add(new Employee("王五", 4000));
+        list.add(new Employee("赵六", 4500));
+
+        //把所有员工的姓名收集到list中
+        list.stream()
+                .map(Employee::getName)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
+        //求出所有员工的薪资平均值
+        Double average = list.stream()
+                .collect(Collectors.averagingDouble(Employee::getSalary));
+        System.out.println(average);
+
+    }
+
 }

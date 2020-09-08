@@ -1,14 +1,13 @@
 package com.stream.anno;
 
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import static java.lang.annotation.ElementType.*;
-
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({TYPE_PARAMETER,TYPE,PARAMETER})
+@Target({ElementType.TYPE_PARAMETER,ElementType.TYPE_USE})
 public @interface MyAnno {
     String value();
 }

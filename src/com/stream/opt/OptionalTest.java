@@ -70,8 +70,6 @@ public class OptionalTest {
         String name = Optional.of(user).map(User::getName)
                 .orElse("佚名");
         System.out.println(name);
-
-
     }
 
     @Test
@@ -101,10 +99,20 @@ public class OptionalTest {
     @Test
     public void test3(){
         User user = new User();
-
+        String name = Optional.of(user).flatMap((u) -> this.getUserName(u))
+                .orElse("佚名");
+        System.out.println(name);
     }
 
+    //把用户名包装成Optional，作为 Function 接口的返回值
     private Optional<String> getUserName(User user){
         return Optional.ofNullable(user.getName());
+    }
+
+    @Test
+    public void test4(){
+        User user = new User();
+        Optional<User> optionalUser = Optional.of(user).filter((u) -> this.getUserName(u).isPresent());
+        optionalUser.get();
     }
 }
