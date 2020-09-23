@@ -6,8 +6,10 @@ package com.proxy.cglib;
  */
 public class TestCglib {
     public static void main(String[] args) {
-        CglibProxy cglibProxy = new CglibProxy();
-        CgTarget o = (CgTarget)cglibProxy.getCglibProxy(new CgTarget());
-        o.getContent();
+//        CglibProxy cglibProxy = new CglibProxy();
+//        CgTarget o = (CgTarget)cglibProxy.getCglibProxy(new CgTarget());
+//        o.getContent();
+        CgTarget cglibProxy = (CgTarget)CgTest.getCglibProxy1(new CgTarget());
+        cglibProxy.getContent();
     }
 }

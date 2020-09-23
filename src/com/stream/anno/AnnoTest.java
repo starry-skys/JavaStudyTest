@@ -21,7 +21,6 @@ public class AnnoTest {
     
     @Test
     public void test(){
-        AnnoTest.class
-        
+
     }
 }
