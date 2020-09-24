@@ -1,36 +1,36 @@
 package com.designMode.single;
 
+import java.io.Serializable;
+
 /**
  *
  * @DATE 2019/7/31 11:02
  */
-public class Singleton {
+public class Singleton implements Serializable {
 
-    private static  Singleton singleton = null;
+    //注意，此变量需要用volatile修饰以防止指令重排序
+    private static volatile Singleton singleton = null;
 
     private Singleton(){
-
-    }
-
-    //定义一个枚举类
-    private enum SingletonEnum {
-        //创建一个枚举实例
-        INSTANCE;
-
-        private Singleton singleton;
-
-        //在枚举类的构造方法内实例化单例类
-        SingletonEnum(){
-            singleton = new Singleton();
-        }
-
-        private Singleton getInstance(){
-            return singleton;
+        if(singleton != null){
+            throw new RuntimeException("Can not do this");
         }
     }
 
     public static Singleton getInstance(){
-        //获取singleton实例
-        return SingletonEnum.INSTANCE.getInstance();
+        //进入方法内，先判断实例是否为空，以确定是否需要进入同步代码块
+        if(singleton == null){
+            synchronized (Singleton.class){
+                //进入同步代码块时再次判断实例是否为空
+                if(singleton == null){
+                    singleton = new Singleton();
+                }
+            }
+        }
+        return singleton;
+    }
+
+    private Object readResolve(){
+        return singleton;
     }
 }
